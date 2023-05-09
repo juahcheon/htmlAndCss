@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; border: 0;}
+ul {list-style: none;}
+a {text-decoration: none;}
+body {background-color: rgb(215, 226, 221);}
+
+
+#wrap {
+    width: 60%;
+    margin: 100px auto;
+    background-color: beige;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+}
+#wrap h1 {
+    padding: 40px 0;
+    text-align: center;
+    color: rgb(137, 179, 158);
+}
+
+.form_group {
+    margin-bottom: 50px;
+    position: relative;
+}
+.form_group label {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    color: #888;
+    transition: .5s;
+}
+.form_group label.active {
+    color: rgb(168, 199, 184);
+    font-weight: bold;
+    font-size: 14px;
+    left: 10px;
+    top: -15px;
+}
+.form_group input {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    background-color: beige;
+    margin-top: 10px;
+}
+
+.agree_group div {
+    margin: 5px 0;
+}
+.agree_group div:first-child {
+    font-weight: bold;
+}
+
+.input_hint {
+    color: tomato;
+    font-size: 12px;
+}
+.btn_area {
+    margin: 70px 0 20px;
+    text-align: center;
+}
+.btn_area button {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn_reset {
+    background-color: mintcream;
+    color: silver;
+}
+.btn_join {
+    background-color: rgb(168, 199, 184);
+    color: #fff;
+}

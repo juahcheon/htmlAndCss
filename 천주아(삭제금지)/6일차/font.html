@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폰트(서체)</title>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@800&family=Permanent+Marker&display=swap');
+        /* font-family: 'Noto Serif Display', serif;
+            font-family: 'Permanent Marker', cursive; */
+
+        /* 미원체 웹폰트로 제공하지 않는 경우 웹폰트를 만들어서 사용할 수 있다. 
+        transfonter 사이트 기준으로 폰트파일(otf/ttf) 업로드 후 Family support 체크 여부 확인(ON으로 체크하면 CSS 양식 만들어줌) 
+        eot : IE8 이하 / woff : 크롬, 오페라, 사파리, 파이어폭스, IE9 이상 / woff2 : 크롬, 파이어폭스, 오페라 */
+        @font-face {
+            /* 폰트를 지정하려면 @font-face {} 규칙을 이용해 지정한다. */
+            font-family: 'Miwon'; /* CSS에서 지정할 폰트명(알아보기 쉽게 작성) */
+            src: url('miwon_font/Miwon.eot'); /* 서체 경로 지정 */
+            src: url('miwon_font/Miwon.eot?#iefix') format('embedded-opentype'),
+                url('miwon_font/Miwon.woff2') format('woff2'),
+                url('miwon_font/Miwon.woff') format('woff');
+            font-weight: bold; /* 서체 굵기(두께) : 100 ~ 900 값을 이용. 서체에 따라 지정된 굵기만 사용할 수 있다. 400(normal) / 700(bold) */
+            font-style: normal; /* 서체 모양(서체가 원래 디자인 된 유무에 따라 스타일이 지정이 안될 수 있다.) */
+            font-display: swap; /* 서체 적용과 내용을 불러오는 순서 설정 */
+        }
+
+        /* KCC도담도담체 */
+        @font-face {
+        font-family: 'KCC-DodamdodamR';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-DodamdodamR.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        }
+
+        /* 에스코어드림 100~900 모두 제공 */
+        @font-face {
+        font-family: 'S-CoreDream-3Light';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+
+        h1 {font-family: 'Miwon';}
+        h2 {font-family: 'Permanent Marker', 'KCC-DodamdodamR', cursive;}
+        .score_01 {font-family: 'S-CoreDream-3Light'; font-weight: 100;}
+        .score_02 {font-family: 'S-CoreDream-3Light'; font-weight: 700;}
+        .score_03 {font-family: 'S-CoreDream-3Light'; font-weight: 900;}
+    </style>
+</head>
+<body>
+    <h1>이지혜 "유튜브 수익 한달 O천만원" 공개, 기부까지 훈훈</h1>
+    <h2>안녕하세요. Hello.</h2>
+    <p class="score_01">가수 겸 방송인 이지혜가 유튜브 수익금을 공개했다. 이지혜의 유튜브 채널 '밉지 않은 관종언니' 채널에는 "유튜브 수익 공개! 관심이들 덕분에 기부했습니다"라는 제목의 영상이 게재됐다.</p>
+    <p class="score_02">이날 이지혜는  "유튜브 수익금을 공개해보도록 하겠다"고 밝혔다.</p>
+    <p class="score_03">그러면서 남편 문재완은 2022년 4~6월 정산금을 공개했다. 4월 8759.96달러, 5월 7339.91달러, 6월 8442.51달러로, 3개월 총수익은 2만4542.38달러(약 3234만4402원)다.이에 이지혜는 "거의 한 달에 1000만원 정도 수익이 났다고 하는데 여러분들이 정말 많이 봐주신 것"이라며 감사 인사를 전했다.</p>
+    <p >이지혜는 3200만원 수익에 개인 돈 5000만원을 보태 초록우산어린이재단에도 기부할 계획을 밝혔다. 그는 금전적으로 어려움을 겪는 가정의 아이들을 지원했으면 하는 바람을 털어놨고, 남편 문재완이 기부금을 이체하는 과정을 공개하기도 했다. 그러면서 이지혜는 "솔직히 '조금 더 있다가 할까' '그러면 내 삶이 나아지지 않을까' 했는데 이런 내가 너무 싫더라, 뭔가 추잡했다"고 말해 웃음을 안겼다. 이체 이후에는 "잔고가 많이 빈곤해졌다"면서도 "그럼에도 (기부를) 하고 나면 마음이 참 뿌듯하다"고 기뻐했다.</p>
+    <p>또 이지혜는 "저도 이렇게 얘기하면서 내 마음을 더 다잡는 것 같다"며 "사람이 돈 벌고 돈이 생기면 하고 싶은 게 많아지는데 그럴 때일수록 초심을 잃지 않는 게 중요하다"고 고백했다. 문재완 또한 그런 아내가 멋있다고 칭찬했지만, 이지혜는 "부족하다"며 "너무 많은 분들이 1억원씩 내시더라, 1억원을 기부할 수 있는 그날까지 조금 더 열심히 해야 할 것 같기도 하다"고 겸손한 모습을 보였다. 또 이지혜는 "사실 기부는 우리가 한 게 아니라 여러분이 한 것"이라며 "여러분이 봐주신 게 기부"라고 모든 공을 구독자들에게 돌리기도 했다.</p>
+    <p>(서울=뉴스1) 장아름 기자</p>
+    <p>aluemchang@news1.kr</p>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap {
+            width: 400px;
+            height: 250px;
+            border: 1px solid;
+            position: relative;
+
+            box-sizing: border-box;
+            position: relative;
+            display: flex;
+        }
+        
+        #circle {
+            width: 96px;
+            box-sizing: content-box;
+            height: 48px;
+            background: red;
+            border-color: blue;
+            border-style: solid;
+            border-width: 0 0 50px 0;
+            border-radius: 100%;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            float: left;
+            margin-top: 75px;
+        }
+        #circle:before {
+            content: "";
+            position: absolute;
+            top: 35%;
+            left: 0;
+            background: #eee;
+            border: 24px solid red;
+            border-radius: 100%;
+
+        }
+        #circle:after {
+            content: "";
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            background: red;
+            border: 24px solid blue;
+            border-radius: 100%;
+            box-sizing: content-box;
+        }
+
+
+        .one {
+            width: 10px;
+            height: 60px;
+            background-color:  black;
+            margin-right: 10px;
+        }
+        .one_1 {
+            width: 10px;
+            height: 60px;
+            background-color:  #fff;
+            margin-right: 10px;
+        }
+        .one_1 div:last-child {
+            margin-top: 10px;
+        }
+        .two {
+            width: 10px;
+            height: 25px;
+            background-color: black;
+            margin-right: 10px;
+        }
+
+        #left {
+            width: 60px;
+            height: 30px;
+            position: absolute;
+            transform: rotate(30deg);
+            top: 40px;
+            left: 60px;
+            display: flex;
+        }
+        #right {
+            width: 60px;
+            height: 30px;
+            position: absolute;
+            transform: rotate(-30deg);
+            top: 30px;
+            right: 60px;
+            display: flex;
+        }
+        #bottom_lef {
+            width: 60px;
+            height: 30px;
+            position: absolute;
+            transform: rotate(-30deg);
+            bottom: 60px;
+            left: 50px;
+            display: flex;
+        }
+        #bottom_rig {
+            width: 60px;
+            height: 30px;
+            position: absolute;
+            transform: rotate(30deg);
+            bottom: 50px;
+            right: 50px;
+            display: flex;
+        }
+        
+        .one>div {
+            align-items: flex-end;
+        }
+        
+  
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="circle"></div>
+        <div id="left">
+            <div class="one"></div>
+            <div class="one"></div>
+            <div class="one"></div>
+        </div>
+        <div id=right>
+            <div class="one_1">
+                <div class="two"></div>
+                <div class="two"></div>
+            </div>
+            <div class="one"></div>
+            <div class="one_1">
+                <div class="two"></div>
+                <div class="two"></div>
+            </div>
+        </div>
+        <div id="bottom_lef">
+            <div class="one"></div>
+            <div class="one_1">
+                <div class="two"></div>
+                <div class="two"></div>
+            </div>
+            <div class="one"></div>
+        </div>
+        <div id="bottom_rig">
+            <div class="one_1">
+                <div class="two"></div>
+                <div class="two"></div>
+            </div>
+            <div class="one_1">
+                <div class="two"></div>
+                <div class="two"></div>
+            </div>
+            <div class="one_1">
+                <div class="two"></div>
+                <div class="two"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

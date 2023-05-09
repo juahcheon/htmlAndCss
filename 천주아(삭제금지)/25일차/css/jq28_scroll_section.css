@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; border: 0;}
+ul {list-style: none;}
+a {text-decoration: none;}
+html, body {height: 100%;}
+
+
+nav {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+
+}
+nav ul {
+    display: flex;
+}
+nav li {
+    width: 25%;
+    height: 50px;
+    background-color: black;
+}
+nav a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 200px;
+    font-size: 100px;
+    box-sizing: border-box;
+}
+/* 하나의 섹션의 높이값을 브라우저의 높이값을 꽉 채울 수 있도록 하려면 
+
+첫번째 방법
+height: 100%; 를 적용하되, html과 body 태그에 height: 100%를 입력해야한다.
+
+두번째 방법
+height: 100vh; 를 입력한다. (Viewport Height : 보여지는 영역 크기. 현재는 웹브라우저의 높이) 
+html, body에 height: 100%; 를 입력하지 않아도 된다.
+*/
+
+#section1 {
+    background-color: indianred;
+}
+#section2 {
+    background-color: crimson;
+}
+#section3 {
+    background-color: blueviolet;
+}
+#section4 {
+    background-color: gold;
+}
+
+.top_btn {
+    width: 50px;
+    height: 50px;
+    display: none;
+    text-align: center;
+    padding-top: 13px;
+    box-sizing: border-box;
+    /* justify-content: center;
+    align-items: center; */
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    color: #fff;
+    border-radius: 50%;
+    font-weight: bold;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100px;
+    z-index: 300;
+}
+#floatBanner {
+    width: 200px;
+    height: 250px;
+    background-color: rgba(0,0,0,.5);
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    right: 50px;
+    top: 100px;
+    z-index: 100;
+    padding-top: 100px;
+    border-radius: 10px;
+}

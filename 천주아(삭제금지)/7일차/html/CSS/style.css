@@ -1,0 +1,186 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/* font-family: 'Nanum Gothic', sans-serif;} */
+
+/* CSS 초기화 */
+* {margin: 0; padding: 0; border: 0;}
+ul {list-style: none;}
+a {text-decoration: none;}
+body {font-family: 'Nanum Gothic', sans-serif;}
+/* 
+p 기본사이즈 : 16px
+h1 기본사이즈 : 2em(p 기준 2배) = 32px
+h2 기본사이즈 : 1.5em(p 기준 1.5배) = 24px
+※ em은 배수단위 
+*/
+
+/* 헤더 영역 */
+#header {width: 100%; height: 30px; background-color: #564D4C; font-family: 'Noto Sans KR', sans-serif;}
+#header_wrap {width: 1000px; height: 30px; margin: auto; text-align: right;}
+#gnb ul li {display: inline-block; font-size: 11px;}
+#gnb ul li:first-child {border-right: 1px solid #312a29; padding-right: 10px; margin-right: 6px;}
+#gnb ul li a {color: #ada1a0;}
+
+
+/* 네비게이션 영역 */
+#nav {width: 100%; height: 80px; font-family: 'Noto Sans KR', sans-serif; border-bottom: 1px solid #ccc; box-sizing: border-box;}
+#nav_wrap {width: 1000px; height: 79px; margin: auto;}
+#top_logo {width: 141px; height: 79px; float: left; padding-top: 20px; box-sizing: border-box;}
+#lnb {width: 750px; height: 40px; float: right; text-align: right; padding-top: 35px;}
+#lnb ul li {display: inline;}
+#lnb ul li a {color: #555; font-weight: bold; margin-right: 55px; letter-spacing: -2px;}
+
+
+/* 메인 콘텐츠 영역 */
+#main_cont {width: 100%; height: 876px; background-image: url("../img/bgimg.png");}
+#main_cont_wrap {width: 1000px; height: 876px; margin: auto; padding-top: 40px; box-sizing: border-box; position: relative;}
+#main_banner_01 {width: 594px; height: 594px; float: left; margin-right: 15px;}
+#main_banner_02 {width: 391px; height: 188px; float: left; margin-bottom: 15px;}
+#main_banner_03 {width: 391px; height: 188px; float: left; margin-bottom: 15px;}
+#main_banner_04 {width: 391px; height: 188px; float: left; margin-bottom: 15px}
+#main_banner_05 {width: 391px; height: 188px; float: left; margin-right: 15px;}
+#main_banner_06 {width: 188px; height: 188px; float: left; margin-right: 15px;}
+#main_banner_07 {width: 188px; height: 188px; float: left; margin-right: 15px;}
+#main_banner_08 {width: 188px; height: 188px; float: left;}
+.shadow {box-shadow: 7px 7px 10px rgba(0,0,0,.2);}
+
+
+
+/* 서브 페이지1 */
+/* 배너 */
+#banner_wrap {width: 100%; height: 219px; background: url(../img/bgimg02.png);}
+#banner {width: 1000px; height: 219px; margin: 0 auto;}
+#banner_left {width: 220px; height: 219px; background-color: #fa8468; float: left;}
+#banner_left ul {color: white; padding: 70px 30px; box-sizing: border-box; font-size: 24px; font-weight: bold;}
+#banner_left ul li:last-child {font-size: 12px; font-weight:normal}
+
+#banner_right {width: 780px; height: 219px; float: left; background: url(../img/top_img.png) no-repeat right;}
+#banner_right ul {color: #9d9d9d; font-size: 12px; padding: 30px 30px; box-sizing: border-box;}
+#banner_right ul li:nth-child(2) {color: #fa8468; font-size: 40px; padding-top: 40px; display: inline-block; margin-bottom: 10px; box-sizing: border-box;}
+
+/* 메뉴 */
+#article_wrap {width: 1000px; height: 1322px; margin: auto;}
+#menu_wrap {width: 220px; height: 1322px; float: left; border: 1px solid #ededed; box-sizing: border-box;}
+.menu {width: 220px; height: 50px; padding: 15px 0 15px 25px; box-sizing: border-box; border: 1px solid #ededed; font-size: 15px;}
+#menu_01 {font-weight: bold; background-color: #f4f4f4;}
+
+/* 본문 */
+#article {width: 780px; height: 1322px; float: left;}
+#article_text {width: 740px; height: 388px; float: right;  background: url(../img/aboutbr_bg.jpg) right no-repeat;}
+#brain {width: 24px; height: 10px; color: #46c6ad;;}
+#article_text ul{font-size: 12px; padding: 30px 0; box-sizing: border-box; color: #8b8589;}
+#article_text ul li:first-child {font-size: 32px; font-weight: bold; color: #46c6ad; padding-bottom: 20px;}
+#article_text ul li:nth-child(2) {font-size: 20px; font-weight: bold; padding-bottom: 20px;}
+#article_select {width: 740px; height: 40px; background-color: #cacaca; clear: both; float: right; text-align: center; line-height: 40px; color: white; font-weight: bold; border: 1px solid #eeeeee;}
+#article_select div:first-child {background-color: #30b796;  border-right: 4px solid white; box-sizing: border-box;}
+
+#article_select div:nth-child(2) {border-right: 4px solid white; box-sizing: border-box;}
+.selectbox {width: 244px; height: 40px; float: left;}
+
+
+
+
+#article_picture {width: 740px; height: 711px; float: right; border: 1px solid #eeeeee; padding-top: 50px;}
+#article_picture_01 {width: 290px; height: 254px; background-color: #373737; float: left; color: white; padding: 50px 30px; box-sizing: border-box;}
+#article_picture_01 ul li:first-child {border-bottom: 1px solid white; font-size: 22px; padding-bottom: 15px;}
+#article_picture_01 ul li:last-child {padding-top: 15px; font-size: 13px;}
+#article_picture_02 {float: left;}
+#article_picture_02 iframe {width: 450px; height: 254px;}
+#article_picture_03 {width: 740px; height: 134px; background-color: #fdfdfd; float: left; background: url(../img/tab_title_01.gif) no-repeat center;}
+#article_picture_04 {width: 340px; height: 280px; background-color: #fdfdfd; float: left; background: url(../img/con_aboutbr_img02.jpg) no-repeat right;}
+#article_picture_05 {width: 400px; height: 280px; float: left; background-color: #fdfdfd; padding: 50px 40px 50px 30px; box-sizing: border-box;}
+#article_picture_05 ul li {color: #927f79;}
+#article_picture_05 ul li:first-child {font-weight: bold; font-size: 20px; padding-bottom: 15px;}
+.middle {padding: 8px 12px; font-size: 15px; font-weight: bold;}
+.last {font-size: 14px; margin-top: -5px; padding-bottom: 10px;}
+
+/* 하단 */
+#article_lastwrap {width: 740px; height: 170px; float: right; text-align: center;}
+#article_last_01 {width: 183px; height: 40px; background-color: #fa8468; color: white; margin: 25px auto; line-height: 40px; font-weight: bold; box-sizing: border-box; position: relative; z-index: 1;}
+#article_last_02 {width: 740px; height: 51px; border-bottom: 1px solid #dcdcdc; float left; margin-top: -98px; z-index: 2;}
+
+
+
+
+/* 퀵메뉴 */
+#quick {width: 116px; height: 584px;
+    position: fixed; top: 150px; left: 50%; margin-left: 523px;}
+    /* 부모와의 관계는 상관없이 확연히 보이는 영역(뷰포트)를 기준으로 잡기 때문에 태그의 삽입 위치는 아무데나 상관 없음. 항상 가운데를 기준으로 잡기 위해 50%를 준 다음 위치를 조정한다. */
+    
+    /* position: absolute; left: 1023px; top: 40px; */ 
+    /* 부모요소 옆에 달아줄 경우 부모 안에 요소를 만들고 부모에 relative 주고 부모를 기준으로 위치를 잡아준다. */
+
+/* #quick_start {width: 118px; height: 584px; position: fixed; top: 150px; left: 50%; margin-left: 523px;}
+#quick {width: 118px; height: 509px; border: 2px solid rgba(243,132,104); box-sizing: border-box; margin: 1px;} 
+#quick_00 {width: 118px; height: 35px; background-color: rgba(243,132,104); color: white; text-align: center; font-weight: bold; line-height: 35px; font-size: 16px;}
+
+
+#toktok {width: 118px; height: 48px; background-color: rgba(0,196,60); border: 1px solid rgba(41,158,77); color:white; text-align: center; line-height: 48px; font-weight: bold;} */
+
+
+
+
+/* 푸터 영역 */
+#footer {width: 100%; height: 147px; border-top: 1px solid #ccc;}
+#footer_wrap {width: 1000px; height: 147px; margin: auto;}
+#footer_logo {
+    width: 200px; height: 147px;  
+    float: left; 
+    text-align: right; 
+
+    /* 로고 이미지 태그로 적용시 */
+    background-image: url("../img/footer_logo.jpg"); 
+    background-repeat: no-repeat;
+    background-position: right 35px;
+    /* background: url("../img/top_logo.jpg") no-repeat right 35px; */
+
+    padding-top: 35px; 
+    box-sizing: border-box;
+}
+#copyright {
+    width: 750px; height: 147px;  
+    float: right; 
+    padding-top: 35px; 
+    box-sizing: border-box; 
+    font-size: 12px;
+    color: #777;
+}
+#fnb a {
+    color: #555;
+}
+#fnb a:nth-child(3) {font-weight: bold;}
+#fnb a:nth-child(4) {font-weight: bold;}
+#fnb a::after {
+    content: "|";
+    margin:0 5px 0 10px;
+    color: #ccc;
+}
+/* 
+::after / ::before
+요소의 앞/뒤 가상의 공간을 선택하는 선택자.
+이 선택자에는 콘텐트 속성을 사용할 수 있다.
+content 속성의 속성값에는 문자("" ex)"a")나 이미지 등 여러가지 요소를 추가할 수 있다.
+상단에 위치한 요소의 float을 해제할 때 하단요소에 clear: both; 를 해주면 되지만, 그 중간에 다른 요소가 끼면 매번 속성을 추가해줘야하기 때문에 묶어주는 부모박스의 뒤에 가상의 클리어박스를 만들어준다.
+부모박스::after {content: ""; display: block; clear: both;}
+*/
+#fnb a:last-child::after {
+    content: "";
+}
+#company {
+    margin: 10px 0 20px;
+    line-height: 1.5;
+}
+#company span {
+    margin-right: 20px;
+    letter-spacing: -1px;
+}
+/* 
+letter-spacing : 자간
+font-stretch : 장평
+
+벤더프리픽스 : 새로운 기능 추가시 5대 브라우저에서 지원할 수 있도록 앞에 접두사를 붙여준다. prefix free 사용시 벤더프리픽스를 안붙여도 됨.
+ */
+#copy {
+    font-size: 10px;
+    color: #a3a3a3;
+}

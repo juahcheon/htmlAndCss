@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팬시박스</title>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+</head>
+<body>
+    <!-- <a href="큰 이미지" data-fancybox data-caption="그룹명">
+        <img src="작은 이미지" />
+    </a> -->
+
+    <a href="img/image_09.jpg" data-fancybox data-caption="Single image">
+        <img src="img/thumbnail_09.jpg" />
+    </a>
+
+    <div id="dialog-content" style="display:none;max-width:500px;">
+        <h2>Hello, world!</h2>
+        <p>
+          <input type="text" value="" />
+        </p>
+        <p>
+          Try hitting the tab key and notice how the focus stays within the dialog
+          itself.
+        </p>
+        <p>
+          To close dialog hit the esc button, click on the overlay or just click the
+          close button.
+        </p>
+        <p>
+          Element used to launch the modal would receive focus back after closing.
+        </p>
+    </div>
+
+    <button data-fancybox data-src="#dialog-content">Launch Dialog</button>
+
+
+    <a href="nate.com" data-fancybox data-type="iframe">iframe</a>
+
+
+    <!-- 구글 지도 접속, 공유 버튼 클릭, iframe 소스 복사 -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.11839795806!2d126.61844917645108!3d37.64642041954244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c80b26f9da855%3A0x8f18542d61a0ec26!2z6rK96riw64-EIOq5gO2PrOyLnCDquYDtj6ztlZzqsJU066GcIDU2NA!5e0!3m2!1sko!2skr!4v1682492770431!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    <!-- * 카카오맵 - 지도퍼가기 
+        : 카카오지도에서 원하는 주소 클릭, 지도에 표시되는 레이블에 +버튼 -> 공유버튼 -> html 태그 복사 -->
+    <!-- 1. 지도 노드 : 실제 지도가 표시되는 영역 -->
+    <div id="daumRoughmapContainer1682492909943" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+    <!--
+        2. 설치 스크립트 : 지도 서비스를 실행하기 위한 스크립트
+        * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+    -->
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+    <!-- 3. 실행 스크립트 : 실제 카카오 지도의 세팅 -->
+    <script charset="UTF-8">
+        new daum.roughmap.Lander({
+            "timestamp" : "1682492909943",
+            "key" : "2ekbt",
+            "mapWidth" : "640",
+            "mapHeight" : "360"
+        }).render();
+    </script>
+
+
+
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+
+        Fancybox.show([
+        {
+            src: "https://www.w3.org/",
+            type: "iframe",
+            preload: false,
+            width: 600,
+            height: 300,
+        },
+        ]);
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <title>슬릭 슬라이더</title>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/slick.js"></script>
+    <style>
+        body {
+            background-color: midnightblue;
+        }
+        .mySlider {
+            width: 800px;
+            margin: 200px auto;
+        }
+        .mySlider img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="mySlider">
+        <div><img src="img/image_11.jpg" alt=""></div>
+        <div><img src="img/image_12.jpg" alt=""></div>
+        <div><img src="img/image_13.jpg" alt=""></div>
+        <div><img src="img/image_14.jpg" alt=""></div>
+        <div><img src="img/image_15.jpg" alt=""></div>
+    </div>
+
+    <script>
+        $(function(){
+            
+            $(".mySlider").slick({
+                dots: true,
+                fade: true
+            });
+
+
+
+        });
+
+    </script>
+</body>
+</html>

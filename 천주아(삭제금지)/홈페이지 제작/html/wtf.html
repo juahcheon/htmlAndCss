@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+    <title>watiflix</title>
+	
+	
+	<!-- js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/watiflix.js"></script>
+	
+	<!-- swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	
+	<!-- fullpage -->
+	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	
+	<!-- css -->
+    <link rel="stylesheet" href="css/watiflix.css">
+	
+	<!-- 폰트(나눔스퀘어네오) -->
+	<link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css" rel="stylesheet">
+	<!-- font-family: 'NanumSquareNeoLight';
+	font-family: 'NanumSquareNeo';
+	font-family: 'NanumSquareNeoBold';
+	font-family: 'NanumSquareNeoExtraBold';
+	font-family: 'NanumSquareNeoHeavy'; -->
+
+</head>
+<body>
+	<!-- 헤더 부분 -->
+	<header id="header">
+		<div class="inner">
+            <div class="btn_wrap">
+                <a href="#netflix" class="netplix_btn">
+                    <img src="img/netflix_logofull.svg" alt="넷플릭스 페이지로 넘어가기">
+                </a>
+                <a href="#watcha" class="watcha_btn">
+                    <img src="img/watcha_logofull.svg" alt="왓챠 페이지로 넘어가기">
+                </a>
+				<a href="#tiving" class="tiving_btn">
+                    <img src="img/tivin_logofull.svg" alt="티빙 페이지로 넘어가기">
+                </a>
+            </div>
+        </div>
+	</header>
+
+	<section id="fullpage">
+
+		<!-- 메인페이지 -->
+		<div class="section main_page" anchors="firstPage">
+			<div class="intro" id="ifram_wrap">
+				<!-- <iframe width="100%" height="1000" src="https://www.youtube.com/embed/vwv_92cE69k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+				<span class="blind">메인페이지 - 방과 후 전쟁활동</span>
+			</div>
+		</div>
+
+
+		<!-- 넷플릭스 -->
+		<div class="section" id="netflix" anchors="secondPage">
+			
+				<div class="slide slide1">
+					<div class="intro opening">
+						<video muted data-autoplay>
+							<source src="img/Netflix_Logo_Animation.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			
+				<div class="slide slide2 posters">
+					<div class="post_container">
+						<div class="posters_imgs post_img_01">
+							<img class="poster_x" src="img/netflix_poster_01_01.webp" alt="더글로리">
+						</div>
+						<div class="posters_imgs post_img_02">
+							<img class="poster_y" src="img/netflix_poster_02_02.webp" alt="오징어게임">
+						</div>
+						<div class="posters_imgs post_img_03">
+							<img class="poster_y" src="img/netflix_poster_03.jpg" alt="스마트폰을 떨어뜨렸을 뿐인데">
+						</div>
+						<div class="posters_imgs post_img_04">
+							<img class="poster_y" src="img/netflix_poster_04.webp" alt="신이 버린 사람들">
+						</div>
+						<span class="blind">현재 넷플릭스 대표작 4선</span>
+					</div>
+				</div>
+			
+				<div class="slide slide3">
+					<img class="logo_show" src="img/netflix_logo.svg" alt="넷플릭스 로고">
+				</div>
+			
+				<div class="slide slide4 swiper-container mySwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img class="slider-image" src="img/netflix_about_01.webp" alt="지금 우리 학교는">
+							<span>자극적인 컨텐츠</span>
+						</div>
+						<div class="swiper-slide">
+							<img class="slider-image" src="img/netflix_about_02.webp" alt="치아문단순적소미호">
+							<span>다양한 국가에서, 다양한 장르를</span>
+						</div>
+						<div class="swiper-slide">
+							<img class="slider-image" src="img/netflix_about_03.webp" alt="헝거">
+							<span>지금 유행하는 컨텐츠를</span>
+						</div>
+						<div class="swiper-slide">
+							<img class="slider-image" src="img/netflix_about_04.webp" alt="투핫">
+							<span>청소년 관람불가</span>
+						</div>
+						<div class="swiper-slide">
+							<img class="slider-image" src="img/netflix_about_05.webp" alt="길 위의 사람들">
+							<span>다큐멘터리도 OTT로</span>
+						</div>
+						<div class="swiper-slide">
+							<img class="slider-image" src="img/netflix_about_06.webp" alt="가십걸">
+							<span>오랫동안 사랑받는 컨텐츠를</span>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+
+				<div class="slide slide5">
+					<p class="recom_contents">넷플릭스 추천컨텐츠</p>
+				</div>
+
+				<div class="slide slide6 swiper2 mySwiper2">
+					<div class="swiper-wrapper">
+						<div class="recom_contents_01 swiper-slide">
+							<img src="img/netflix_recom_01.jpg" alt="작은 아씨들">
+							<span>작은 아씨들</span>
+							<p>난초에서 시작해 살인으로 끝나게 된 이야기. 스릴러를 좋아한다면 이 드라마를 놓치지 않아야 한다.</p>
+							<p>김고은, 남지현, 박지후</p>
+							<p>미스터리, 스릴러</p>
+						</div>
+						<div class="recom_contents_02 swiper-slide">
+							<img src="img/netflix_poster_01.jpg" alt="더글로리">
+							<span>더글로리</span>
+							<p>학교폭력이라는 키워드에 망설임없이 부정적인 프레임을 씌워버린 가장 통쾌한 드라마. 사이다같은 매력에 빠지고 싶다면 당장 틀어라!</p>
+							<p>송혜교, 이도현, 임지연</p>
+							<p>드라마</p>
+						</div>
+						<div class="recom_contents_03 swiper-slide">
+							<img src="img/netflix_recom_03.jpg" alt="에밀리 파리에 가다">
+							<span>에밀리 파리에 가다</span>
+							<p>파리에 간 미국인 에밀리가 느낀 문화 충격과 그럼에도 당차게 적응해나가는 일기. 아름다운 프랑스의 전경을 온 몸으로 느낄 수 있다.</p>
+							<p>릴리 콜린스</p>
+							<p>로맨스 코미디</p>
+						</div>
+						<div class="recom_contents_04 swiper-slide">
+							<img src="img/netflix_recom_04.jpg" alt="애나만들기">
+							<span>애나만들기</span>
+							<p>허영에 가득 찬 사람들을 유쾌하게 비판하는 내용. 애나라는 인물은 엉뚱하지만 발랄한 과거와 우울한 현재가 대비된다.</p>
+							<p>줄리아 가너</p>
+							<p>드라마</p>
+						</div>
+						<div class="recom_contents_05 swiper-slide">
+							<img src="img/netflix_recom_05.jpg" alt="너에게 닿기를">
+							<span>너에게 닿기를</span>
+							<p>학창시절 조심스럽게 다가오는 설렘을 잘 표현한 애니메이션. 두근거림을 느끼고 싶다면 적격이다.</p>
+							<p>쿠로누마 사와코, 카제하야 쇼타</p>
+							<p>애니메이션</p>
+						</div>
+						<div class="recom_contents_06 swiper-slide">
+							<img src="img/netflix_recom_06.jpg" alt="내가 사랑했던 모든 남자들에게">
+							<span>내가 사랑했던 모든 남자들에게</span>
+							<p>미국스러운 하이틴. 귀여운 동양인 라라의 짝사랑 수난일기. 다른 하이틴과는 다르게 청소년만의 풋풋함을 잘 담았다.</p>
+							<p>라나 콘도어</p>
+							<p>하이틴, 로맨스</p>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+
+				<div class="btn n_btn">
+					<button class="prev fp-arrow fp-controlArrow fp-prev"><span class="blind">이전 페이지</span>&lt;</button>
+					<button class="next fp-arrow fp-controlArrow fp-next"><span class="blind">다음 페이지</span>&gt;</button>
+				</div>
+		</div>
+
+
+
+		<!-- 왓챠 -->
+		<div class="section" id="watcha" anchors="thirdPage">
+			<div class="slide slide1">
+				<div class="intro opening">
+					<video muted data-autoplay>
+						<source src="img/watcha_logo_video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+
+			<div class="slide slide2 posters">
+				<div class="post_container">
+					<div class="posters_imgs post_img_01">
+						<img class="poster_y" src="img/watcha_poster_01.webp" alt="킬링 이브">
+					</div>
+					<div class="posters_imgs post_img_02">
+						<img class="poster_y" src="img/watcha_poster_02.webp" alt="귀멸의 칼날">
+					</div>
+					<div class="posters_imgs post_img_03">
+						<img class="poster_y" src="img/watcha_poster_03.webp" alt="시맨틱 에러">
+					</div>
+					<div class="posters_imgs post_img_04">
+						<img class="poster_x" src="img/watcha_poster_04.webp" alt="검정고무신">
+					</div>
+					<span class="blind">현재 왓챠 대표작 4선</span>
+				</div>
+			</div>
+
+			<div class="slide slide3">
+				<img class="logo_show" src="img/watcha_logo.png" alt="왓챠 로고">
+			</div>
+
+			<div class="btn w_btn">
+				<button class="prev fp-arrow fp-controlArrow fp-prev"><span class="blind">이전</span>&lt;</button>
+				<button class="next fp-arrow fp-controlArrow fp-next"><span class="blind">다음</span>&gt;</button>
+			</div>
+		</div>
+
+		
+		<!-- 티빙 -->
+		<div class="section" id="tiving" anchors="fourthPage">
+			<div class="slide slide1">
+				<div class="intro opening">
+					<video muted data-autoplay>
+						<source src="img/tiving_logo_video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+
+			<div class="slide slide2 posters">
+				<div class="post_container">
+					<div class="posters_imgs post_img_01">
+						<img class="poster_x" src="img/tiving_poster_01.webp" alt="환승연애">
+					</div>
+					<div class="posters_imgs post_img_02">
+						<img class="poster_y" src="img/tiving_poster_02.webp" alt="유미의 세포들">
+					</div>
+					<div class="posters_imgs post_img_03">
+						<img class="poster_y" src="img/tiving_poster_03.webp" alt="서진이네">
+					</div>
+					<div class="posters_imgs post_img_04">
+						<img class="poster_y" src="img/tiving_poster_04.webp" alt="나쁜엄마">
+					</div>
+					<span class="blind">현재 티빙 대표작 4선</span>
+				</div>
+			</div>
+
+			<div class="slide slide3">
+				<img class="logo_show" src="img/tiving_logo.png" alt="티빙 로고">
+			</div>
+
+			<div class="btn t_btn">
+				<button class="prev fp-arrow fp-controlArrow fp-prev"><span class="blind">이전</span>&lt;</button>
+				<button class="next fp-arrow fp-controlArrow fp-next"><span class="blind">다음</span>&gt;</button>
+			</div>
+		</div>
+		
+		
+
+
+		
+	</section>
+
+	<script type="text/javascript" src="js/fullpage.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+
+	<!-- full page -->
+	<script type="text/javascript">
+		var myFullpage = new fullpage('#fullpage', {
+			anchors: ['firstPage', 'secondPage', '3rdPage'],
+			css3: true
+		});
+	</script>
+
+
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper(".swiper-container", {
+		  effect: "coverflow",
+		  grabCursor: true,
+		  centeredSlides: true,
+		  slidesPerView: "auto",
+		  coverflowEffect: {
+			rotate: 50,
+			stretch: 0,
+			depth: 100,
+			modifier: 1,
+			slideShadows: true,
+		  },
+		  pagination: {
+			el: ".swiper-pagination",
+		  },
+		});
+
+		// var swiper2 = new Swiper(".mySwiper2", {
+		// 	effect: "cards",
+		// 	grabCursor: true,
+		// });
+	  </script>
+
+</body>
+</html>

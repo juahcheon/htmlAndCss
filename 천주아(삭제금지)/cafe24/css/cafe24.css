@@ -1,0 +1,343 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; border: 0;}
+ul {list-style: none;}
+a {text-decoration: none;}
+
+
+
+
+/* 공통 작업 */
+
+
+.inner {
+    width: 875px;
+    background-color: rgba(0,0,0,.1);
+    margin: auto;
+    position: relative;
+}
+.cont_btn {
+    width: 120px;
+    height: 31px;
+    background-color: #3d7feb;
+    border-radius: 60px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+.cont_wrap {
+    width: 100%;
+    height: 442px;
+    background-color: rgba(0,0,0,.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+.cont_title {
+    width: 100%;
+    height: 33px;
+    background-color: rgba(0,0,0,.1);
+    text-align: center;
+}
+
+
+/* 헤더 부분 */
+header {
+    width: 100%;
+    height: 119px;
+    background-color: rgba(255,0,0,.1);
+}
+.header_adv {
+    width: 100%;
+    height: 59px;
+    background-color: rgba(0,0,0,.1);
+    position: relative;
+}
+.h_adv_text {
+    width: 423px;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(0,0,0,.1);
+}
+.next_btn {
+    width: 9px;
+    height: 15px; 
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    transform: translatex(260px);
+}
+
+.lnb_bar {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0,0,0,.2);
+    border-bottom: 1px solid #62504b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#top_logo {
+    width: 115px;
+    height: 21px;
+    background-color: rgba(0,0,0,.1);
+}
+.h_making_shop {
+    margin-right: 75px;
+}
+
+.lnb {
+    width: 547px;
+    height: 60px;
+    background-color: rgba(0,0,0,.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_lnb {
+    width: 293px;
+    height: 100%;
+    background-color: rgba(0,0,0,.1);
+}
+.nav_login {
+    width: 171px;
+    height: 100%;
+    background-color: rgba(0,0,0,.1);
+}
+.search {
+    width: 17px;
+    height: 17px;
+    background-color: rgba(0,0,0,.1);
+    font-size: 12px;
+}
+.menu_btn {
+    width: 19px;
+    height: 17px;
+    background-color: rgba(0,0,0,.1);
+}
+
+.close_btn {
+    position: absolute;
+    top: 24px;
+    right: 28px; 
+}
+
+
+
+
+/* 메인 비쥬얼 */
+#main_visual {
+    width: 100%;
+    height: 378px;
+    background-color: rgba(255,255,0,.3);
+}
+#main_visual .inner {
+    padding: 55px 0 45px 72px;
+    box-sizing: border-box;
+}
+.m_btn {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+}
+.left_btn {
+    left: -32px;
+}
+.right_btn {
+    right: -32px;
+}
+
+.play_bar {
+    width: 128px;
+    height: 9px;
+    background-color: rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.now_playing,
+.all_playing {
+    width: 7px;
+    height: 9px;
+    background-color: rgba(0,0,0,.1);
+    font-size: 6px;
+    display: flex;
+    align-items: center;
+}
+.playBar {
+    width: 84px;
+    height: 2px;
+    background-color: red;
+}
+.play_btn {
+    width: 6px;
+    height: 9px;
+    background-color: rgba(0,0,0,.1);
+    font-size: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.main_text {
+    width: 380px;
+    height: 69px;
+    background-color: rgba(0,0,0,.1);
+    margin: 78px 0 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.main_text p {
+    font-size: 34px;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+.main_text span {
+    font-size: 12px;
+}
+
+
+/* 컨텐츠 1 */
+#contents_01 {
+    width: 100%;
+    height: 737px;
+    background-color: rgba(255,0,255,.1);
+}
+#contents_01 .inner {
+    padding: 41px 0 70px;
+}
+.cont_nav {
+    width: 647px;
+    height: 37px;
+    background-color: rgba(0,0,0,.1);
+    margin: auto;
+}
+
+.cont_box {
+    width: 100%;
+    height: 266px;
+    background-color: rgba(0,0,0,.1);
+    margin: 32px 0 39px;
+    display: flex;
+    justify-content: space-between;
+}
+.content_img {
+    width: 276px;
+    height: 266px;
+    background-color: rgba(0,0,0,.1);
+}
+
+.cont_adv {
+    width: 100%;
+    height: 252px;
+    background-color: rgba(0,0,0,.1);
+    padding: 0 121px 0 52px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cont_adv_text {
+    width: 258px;
+    height: 147px;
+    background-color: rgba(0,0,0,.1);
+    position: absolute;
+}
+.cont_adv img {
+    width: 310px;
+    height: 100%;
+    object-fit: cover;
+    background-color: rgba(0,0,0,.1);
+}
+
+
+
+
+/* 온라인 비즈니스 성공을 위한 모든 것 */
+#business {
+    width: 100%;
+    height: 567px;
+    background-color: rgba(0,0,255,.1);
+}
+#business .inner {
+    padding-top: 57px;
+    box-sizing: border-box;
+}
+.busi_cont_box {
+    width: 100%;
+    height: 275px;
+    background-color: rgba(0,0,0,.1);
+    display: flex;
+    justify-content: space-between;
+}
+.busi_cont_left,
+.busi_cont_right {
+    width: 426px;
+    height: 100%;
+    background-color: rgba(0,0,0,.1);
+}
+
+
+
+
+/* 마케팅 */
+#marketing {
+    width: 100%;
+    height: 582px;
+    background-color: rgba(0,255,0,.1);
+}
+#marketing .inner {
+    padding-top: 57px;
+    box-sizing: border-box;
+}
+.mkt_nav {
+    width: 100%;
+    height: 46px;
+    background-color: rgba(0,0,0,.1);
+}
+.mkt_adv {
+    width: 100%;
+    height: 252px;
+    background-color: rgba(0,0,0,.1);
+    margin: 29px 0 45px;
+}
+
+
+
+
+/* 호스팅 */
+#hoasting {
+    width: 100%;
+    height: 581px;
+    background-color: aquamarine;
+}
+#hoasting .inner {
+    padding-top: 57px;
+    box-sizing: border-box;
+}
+
+
+
+/* 푸터1 */
+#fnb {
+    width: 100%;
+    height: 296px;
+    background-color:darkgray;
+}
+
+
+
+
+/* 푸터2 */
+#footer {
+    width: 100%;
+    height: 360px;
+    background-color: lavender;
+}

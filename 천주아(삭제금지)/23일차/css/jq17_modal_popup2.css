@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+
+*{margin: 0; padding: 0; border: 0;}
+ul {list-style: none;}
+a {text-decoration: none;}
+body {font-family: 'Hahmlet', serif;}
+/* html, body{height: 100%;} : 브라우저 전체 높이를 꽉 채우는 요소를 만들고 싶은 경우 html, body에 height: 100%; 를 주면 된다.
+또는 요소에 100vh(Viewport Height)를 사용하면 된다. */
+
+#wrap_wrap {
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+#wrap {
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#notice {
+    font-size: 30px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+#exit {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 800;
+    cursor: pointer;
+}
+#exit i {
+    font-size: 20px;
+}
+#notice .fa-triangle-exclamation {
+    color: salmon;
+    font-size: 50px;
+}
+
+#contents {
+    padding: 25px 0;
+    font-size: 25px;
+    line-height: 1.7;
+}
+#contents p {
+    color: salmon;
+    font-weight: bold;
+}
+#small_font {
+    display: block;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}

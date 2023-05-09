@@ -1,0 +1,301 @@
+@charset "utf-8";
+
+/* CSS 초기화 */
+* {margin: 0; padding: 0; border: 0;}
+ul {list-style: none;}
+a {text-decoration: none;}
+body {font-family: 'GmarketSansMedium'; letter-spacing: -1px;}
+
+/* 만화진흥원체(lnb) */
+@font-face {
+    font-family: 'KOMACON';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* G마켓체(본문) */
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#wrap {
+    width: 100%;
+    margin: auto;
+}
+
+
+#header {
+    width: 100%;
+    height: 120px;
+    background-color: #333;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+
+#lnb {
+    width: 100%;
+    height: 120px;
+    font-family: 'KOMACON';
+}
+#lnb li {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+#lnb li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: rgb(224, 24, 24);
+    font-weight: bold;
+    padding-top: 5px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+
+#main_visual {
+    width: 100%;
+    height: 250px;
+    background: url(../img/main_sac_img.jpg) center;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+#main_visual span {
+    display: block;
+    text-indent: -9999px;
+}
+
+
+
+.main_img {
+    width: 94%;
+    margin: 0 auto 20px;
+    position: relative;
+}
+.main_img img {
+    width: 100%;
+}
+.main_img a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.main_img_caption {
+    width: 100%;
+    background-color:rgba(0,0,0,.7);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: rgb(224, 24, 24);
+}
+.main_img_caption h4 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.main_img_caption h4,
+.main_img_caption p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/* 말줄임표 세트 ※block 속성 요소에 적용해야 함
+white-space: nowrap; 줄바꿈 여부 설정
+overflow: hidden; 넘치는 부분 가려서 표시
+text-overflow: ellipsis; 글자 넘침 말줄임표(...)로 처리 */
+
+
+#mobile_btn {
+    width: 70%;
+    height: 60px;
+    margin: 50px auto;
+    /* font-size: 0; */
+
+    font-size: 30px;
+}
+#mobile_btn ul {
+    display: flex;
+    justify-content: space-between;
+    
+}
+#mobile_btn li a span {
+    display: block;
+    text-indent: -9999px;
+}
+/* #mobile_btn li {
+    
+    /* 두번째 방법: display: inline-block;
+    font-size: 16px; */
+    /* 첫번째 방법: float: left; */
+ */
+/* 첫번째 방법 
+margin-right: 30px;
+#mobile_btn li:last-child {
+    margin-right: 0;
+} */
+
+/* 두번째 방법
+#mobile_btn li:nth-child(2) {
+    margin: 0 30px;
+} */
+
+/* #mobile_btn li:not(:last-child) {
+    margin-right: 30px;
+} */
+
+#mobile_btn ul li a {
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+#mobile_btn ul li a i {
+    color: rgb(224, 24, 24);
+}
+
+
+#footer {
+    width: 100%;
+    background-color: #131111;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    color: #aaa;
+    text-align: center;
+}
+#footer_logo {
+    height: 60px;
+    margin-bottom: 10px;
+}
+#copyright {
+    font-size: 14px;
+}
+
+
+
+/* 태블릿버전 미디어쿼리 */
+@media screen and (min-width: 600px) {
+    #lnb {
+        height: 30px;
+    }
+    #lnb li {
+        width: 25%;
+        height: 30px;
+        float: left;
+    }
+    #main_visual {
+        height: 300px;
+        margin-bottom: 50px;
+    }
+
+    .main_img {
+        width: 47%;
+        height: 400px;
+        float: left;
+        margin: 0 1.5% 50px;
+        /* overflow: hidden; */
+    }
+    .main_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* 이미지 태그에 너비, 높이를 지정한 다음 속성을 적용하면 그 크기에 맞게 꽉 채우면서 비율이 안 맞는 부분은 잘라서 보여준다. (background-size: cover; 속성과 같은 원리) 
+        object-fit: fill;(기본값) 
+        */
+    }
+    .main_img_caption p {
+        font-size: 14px;
+    }
+    .main_img_caption h4 {
+        font-size: 18px;
+    }
+    #mobile_btn {
+        display: none;
+    }
+    #footer {
+        clear: both;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    #footer_logo {
+        width: 25%;
+        /* float: left; */
+    }
+    #footer_logo img {
+        width: 100%;
+    }
+    #copyright {
+        width: 70%;
+        /* float: left; */
+        font-size: 12px;
+        text-align: left;
+    }
+}
+
+
+
+/* 데스크탑 미디어쿼리 */
+@media screen and (min-width: 960px) {
+    #wrap {
+        width: 960px;
+    }
+    #lnb li a {
+        transition: .5s;
+    }
+    #lnb li a:hover {
+        background-color: rgb(223, 216, 216);
+    }
+    #main_visual {
+        height: 500px;
+    }
+    .main_img {
+        width: 225px;
+        height: 280px;
+        margin: 0 20px 50px 0;
+    }
+    .main_img a {
+        opacity: 0;
+        transition: .5s;
+    }
+    .main_img a:hover {
+        opacity: 1;
+    }
+    .main_img img {
+        object-fit: cover;
+    }
+    .main_img:nth-of-type(4n) {
+        margin-right: 0;
+    }
+    .main_img_caption h4 {
+        font-size: 15px;
+    }
+    .main_img_caption p {
+        font-size: 12px;
+    }
+    #footer_logo {
+        width: 200px;
+    }
+    #copyright {
+        width: 700px;
+    }
+}
+
+
+/* ※ 미디어쿼리 중단점을 min-width로만 작성시 CSS상의 작성 순서를 M -> T -> D 순으로 작성해야 한다. (작은 것부터 큰 순서대로) */

@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; border: 0;}
+ul {list-style: none;}
+a {text-decoration: none;}
+body {background-color: #000;}
+
+
+
+/* swiper */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.swiper-container {
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 600px;
+    margin-right: 20px;
+    box-shadow: 0 0 15px #555;
+}
+.swiper-slide span { 
+    color: #fff;
+    font-family: 'NanumSquareNeoLight';
+    display: block;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.recom_contents_01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+
+
+
+
+/* 헤더 부분 */
+#header {
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    z-index: 100;
+    background: linear-gradient(to bottom, #333, transparent);
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+#header img {
+    width: 80px;
+}
+.btn_wrap {
+    display: flex;
+}
+#header a {
+    background-color: transparent;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.7);
+}
+#header a:hover {
+    border-bottom: 3px solid #000;
+}
+
+
+
+/* 청각자료(alt) */
+.blind {
+    display: block;
+    text-indent: -9999;
+    font-size: 0;
+}
+
+
+
+/* 메인 페이지 */
+.main_page {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.main_page iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:100%;
+    height:100%;
+    font-size:1em;
+}
+#ifram_wrap {
+    border: 1px solid #d6d6d6;
+    height: 150px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+
+/* 이전/다음 버튼 */
+button {
+    width: 50px;
+    height: 50px;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    font-size: 60px;
+    background-color: transparent;
+    margin: 0 10px;
+}
+.n_btn button {
+    color: #E50914;
+}
+.w_btn button {
+    color: #ff0558;
+}
+.t_btn button {
+    color: #ff153c;
+}
+
+
+/* 오프닝 로고 비디오 */
+.opening {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.opening video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.posters {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+}
+.posters_imgs img {
+    position: absolute;
+    display: none;
+}
+
+.poster_x {
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+}
+.poster_y {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.post_img_01 img {
+    left: 10%;
+    top: 20%;
+}
+.post_img_02 img {
+    right: 10%;
+    top: 20%;
+}
+.post_img_03 img {
+    left: 30%;
+    bottom: 20%;
+}
+.post_img_04 img {
+    right: 20%;
+    bottom: 10%;
+}
+
+
+
+.slide3 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.logo_show {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 10%;
+}
+
+.slide5 p {
+    font-family: 'NanumSquareNeoHeavy';
+    font-size: 4em;
+}
+.slide6 {
+    font-family: 'NanumSquareNeo';
+}

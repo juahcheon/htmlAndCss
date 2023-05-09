@@ -1,0 +1,1031 @@
+@charset "utf-8";
+
+/* CSS 초기화 */
+* {margin: 0; padding: 0; border: 0;}
+ul {list-style: none;}
+a {text-decoration: none; color: inherit;}
+body {font-family: 'Noto Sans KR'; padding-top: 60px;}
+/* font-family: 'Roboto', sans-serif; */
+
+
+
+
+.center_wrap {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.angle_left {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 41%;
+}
+.angle_right {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 41%;
+}
+figure ul li:not(:first-of-type) {
+    display: none;
+}
+
+
+
+#header_lnb_m {
+    width: 270px;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    border-right: 1px solid #c5c5c5;
+}
+#header_lnb_m h2 {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 900;
+    color: rgb(88,41,49);
+    border-bottom: 1px solid #c5c5c5;
+    box-sizing: border-box;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+.lnb_m {
+    height: 50px;
+    border-bottom: 1px solid #c5c5c5;
+    box-sizing: border-box;
+    padding: 12px;
+    font-size: 15px;
+}
+#lnb_lag {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    color: #8a8a8a;
+    margin-top: 20px;
+}
+#lnb_lag p:first-of-type::after {
+    content: "|";
+    margin: 0 10px 0;
+}
+
+
+/* 헤더 */
+#header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+}
+#header .center_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+#top_logo img {
+    width: 47px;
+    height: 47px;
+    display: block;
+    margin: auto;
+}
+#header_gnb,
+#header_lnb {
+    display: none;
+}
+
+#header .center_wrap:first-child:hover {
+    position: absolute;
+    opacity: 1;
+}
+
+
+
+/* 메인 비쥬얼 */
+#main_visual {
+    width: 100%;
+    height: 150vw;
+    background: url(../img/main_slide_01_m.jpg) left no-repeat;
+    background-size: cover;
+    background-position: cetner;
+}
+#main_visual .center_wrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+}
+#main_visual_event {
+    display: none;
+}
+
+
+
+/* 네비게이션 */
+#notice {
+    width: 100%;
+    height: 62px;
+    background-color: #572a31;
+}
+#notice_box {
+    width: 92%;
+    height: 100%;
+    margin: auto;
+    background: url(../img/notice_icon.png) no-repeat left;
+    position: relative;
+}
+#notice_box span {
+    display: block;
+    text-indent: -9999px;
+    width: 0;
+    height: 0;
+}
+.notice_recent {
+    width: 84%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    letter-spacing: -1px;
+    font-weight: 300;
+}
+.notice_recent p {
+    line-height: 100%;
+    color: #f7f5f5;
+}
+.notice_recent a {
+    width: 100%;
+}
+.notice_recent_title {
+    width: 163px;
+    height: 17px;
+    position: absolute;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.notice_recent_date {
+    display: block;
+    width: 72px;
+    height: 17px;
+    text-align: right;
+    margin-right: 30px;
+}
+.notice_recent_more {
+    font-size: 0;
+}
+.notice_recent:last-of-type {
+    display: none;
+}
+
+
+
+/* 컨텐츠 시작 */
+/* 탐앤탐스 메뉴 */
+#toms_menu {
+    width: 100%;
+    height: 630px;
+}
+#toms_menu span {
+    font-weight: 300;
+}
+#toms_menu .center_wrap {
+    padding: 73px 15px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#toms_menu_slide {
+    width: 92%;
+    height: 426px;
+    margin: 24px auto 0;
+    position: relative;
+}
+figure p {
+    width: 100%;
+    height: 60px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -1px;
+    margin-top: 30px;
+}
+figure p:not(:nth-child(2)) {
+    font-family: 'Roboto', sans-serif;
+}
+figure img {
+    width: 100%;
+    height: 366px;
+}
+.slide_play_btn {
+    display: none;
+}
+
+
+/* 대한민국 대표 */
+#toms_about {
+    width: 100%;
+    height: 620px;
+    color: #572a31;
+    background: url(../img/section2_bg_m.jpg) no-repeat left;
+    background-size: cover;
+    box-sizing: border-box;
+    text-align: 100% 100%;
+}
+#btn_wrap {
+    width: 298px;
+    height: 98px;
+    display: block;
+    margin: auto;
+}
+.toms_about_title {
+    padding: 64px 62px 22px;
+    box-sizing: border-box;
+}
+.toms_about_title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+.toms_about_title span {
+    font-size: 4.7vw;
+    font-weight: 400;
+    letter-spacing: -2px;
+    font-family: 'Noto Sans KR';
+}
+.toms_about_cont {
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 3.8vw;
+}
+.only_desctop {
+    display: none;
+}
+
+#branch_btn {
+    width: 300px;
+    height: 45px;
+    display: block;
+    color: #ece0db;
+    background-color: #572a31;
+    border: 1px solid #5f333a;
+    box-sizing: border-box;
+    margin: 51px 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 5px;
+}
+#brand_btn {
+    width: 145px;
+    height: 45px;
+    display: block;
+    color: #572a31;
+    background-color: #ece0db;
+    border: 1px solid #572a31;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 8px;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 7px;
+    box-sizing: border-box;
+}
+#new_branch_btn {
+    width: 145px;
+    height: 45px;
+    display: block;
+    color: #572a31;
+    background-color: #ece0db;
+    border: 1px solid #572a31;
+    box-sizing: border-box;
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 7px;
+    box-sizing: border-box;
+}
+
+
+
+
+/* 탐앤탐스 MD */
+#toms_md {
+    width: 100%;
+    height: 600px;
+}
+#toms_md .center_wrap {
+    padding: 73px 15px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+#toms_md span {
+    font-weight: 300;
+}
+#mdpick {
+    width: 92%;
+    height: 428px;
+    margin: 22px auto 0;
+    position: relative;
+}
+
+
+/* 탐앤탐스 SNS */
+#toms_sns {
+    width: 100%;
+    height: 607px;
+    text-align: center;
+    padding-top: 35px;
+    box-sizing: border-box;
+}
+#toms_sns span {
+    font-weight: 300;
+}
+#toms_sns_box {
+    width: 92%;
+    height: 404px;
+    margin: 25px auto 0;
+}
+#toms_sns_box ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+#toms_sns_box ul li {
+    width: 33.33%;
+    height: 101px;
+}
+#toms_sns_box ul li img {
+    width: 100%;
+    height: 100%;
+}
+/* 컨텐츠 끝 */
+
+
+
+/* 푸터 */
+#footer {
+    width: 100%;
+    height: 582px;
+    background-color: #efefef;
+    color: #8a8a8a ;
+    padding: 50px 4%;
+    box-sizing: border-box;
+}
+#footer h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+#footer .center_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+}
+#follow {
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+
+
+#follow ul li img {
+    width: 30px;
+    height: 30px;
+}
+#follow ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+#follow ul li div {
+    width: 30px;
+    height: 30px;
+    background-color: #4c4c4c;
+    color: #efefef;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+.sns_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#language {
+    width: 100%;
+    height: 46px;
+}
+#language ul {
+    display: flex;
+}
+#language ul li {
+    margin-right: 8px;
+    font-weight: 900;
+}
+
+
+#customer {
+    width: 100%;
+    height: 54px;
+    color: #572a31;
+}
+#customer a {
+    font-size: 24px;
+}
+
+
+#fnb {
+    width: 100%;
+    height: 78px;
+    line-height: 1.7;
+    color: #572a31;
+}
+#fnb ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+#fnb ul li:not(:last-child)::after {
+    content: "·";
+    margin: 0 10px 0;
+}
+#fnb .second_ul {
+    display: none;
+}
+
+
+#company {
+    width: 100%;
+    height: 75px;
+    line-height: 1.2;
+}
+#company span {
+    font-style: normal;
+    font-size: 13px;
+}
+#company:first-of-type span {
+    margin-right: 5px;
+}
+
+
+
+#copyright {
+    width: 100%;
+    height: 38px;
+    line-height: 1.6;
+    font-size: 12px;
+}
+#copyright p {
+    margin: 0;
+}
+
+
+
+#top_btn {
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    background-color: #3d4044;
+    color: #c9d5e0;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#chatbot img {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    right: 10px;
+    bottom: 105px;
+}
+
+
+
+/* 태블릿 버전 미디어쿼리 */
+@media screen and (min-width: 768px) {
+    body {
+        padding-top: 60px;
+    }
+    figure ul li:not(:first-of-type) {
+        display: block;
+    }
+    figure ul li:nth-last-child(2),
+    figure ul li:last-child {
+        display: none;
+    }
+    #main_visual {
+        height: 40vw;
+        background: url(../img/main_slide_01.jpg) no-repeat bottom;
+        background-size: 100%;
+    }
+    .notice_recent {
+        width: 91%;
+    }
+    .notice_recent_title {
+        width: 361px;
+    }
+
+    /* 대한민국 대표 */
+    #toms_about {
+        height: 474px;
+        background: url(../img/section2_bg.jpg) center;
+        text-align: left;
+        position: relative;
+    }
+    .toms_about_title {
+        width: 451px;
+        height: 159px;
+        padding: 0;
+        position: absolute;
+        top: 54px;
+        right: 15px;
+    }
+    .toms_about_title span {
+        font-size: 38px;
+    }
+    .toms_about_cont {
+        padding: 0;
+        width: 451px;
+        height: 126px;
+        position: absolute;
+        right: 15px;
+        top: 238px;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: -1px;
+        margin-bottom: 49px;
+    }
+    #btn_wrap {
+        width: 451px;
+        height: 52px;
+        position: absolute;
+        right: 15px;
+        bottom: 47px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #branch_btn {
+        width: 145px;
+        height: 50px;
+        display: block;
+        margin: 0;
+        text-align: center;
+        padding-top: 7px;
+    }
+    #brand_btn {
+        width: 145px;
+        height: 50px;
+        text-align: center;
+        margin-right: 0;
+    }
+    #new_branch_btn {
+        width: 145px;
+        height: 50px;
+        text-align: center;
+    }
+
+    #toms_menu {
+        height: 569px;
+        padding: 0 15px 0;
+        box-sizing: border-box;
+    }
+    #toms_md {
+        height: 569px;
+        padding: 0 15px 0;
+        box-sizing: border-box;
+    }
+
+    h2 {
+        font-size: 40px;
+        margin-bottom: 34px;
+    }
+    #toms_menu_slide {
+        width: 100%;
+        height: 334px;
+    }
+    #mdpick {
+        width: 100%;
+        height: 334px;
+    }
+    
+    
+    figure {
+        width: 100%;
+        height: 100%;
+    }
+    figure ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    figure ul li {
+        width: 33.33%;
+        height: 100%;
+    }
+    figure ul li img {
+        width: 100%;
+        height: 272px;
+    }
+    figcaption {
+        display: flex;
+        align-content: space-around;
+    }
+    figcaption p {
+        width: 33.33%;
+    }
+    figure img:not(:first-of-type),
+    figcaption ul li:not(:first-of-type) {
+        display: block;
+    }
+    #toms_sns {
+        height: 500px;
+    }
+    #toms_sns_box {
+        width: 96%;
+        height: 272px;
+        margin: auto;
+    }
+    #toms_sns_box ul li {
+        width: 20%;
+        height: 137px;
+    }
+    #footer {
+        padding: 52px 2%;
+        box-sizing: border-box;
+    }
+    #fnb {
+        height: 56px;
+    }
+    #fnb .first_ul {
+        display: none;
+    }
+    #fnb .second_ul {
+        display: flex;
+    }
+    #fnb ul li:not(:last-child)::after {
+        content: "·";
+        margin: 0 10px 0;
+    }
+    #company .dis_none {
+        display: none;
+    }
+    #company {
+        height: 39px;
+    }
+    #copyright {
+        height: 19px;
+    }
+}
+
+
+
+/* 데스크탑 버전 미디어쿼리 */
+@media screen and (min-width: 1400px) {
+    body {
+        padding-top: 140px;
+    }
+    #header_lnb_m {
+        display: none;
+    }
+    #header {
+        height: 140px; 
+    }
+    #header .center_wrap {
+        width: 1400px;
+        height: 100%;
+        position: relative;
+        margin: auto;
+    }
+    #header i {
+        display: none;
+    }
+    #top_logo img {
+        width: 94px;
+        height: 94px;
+        position: absolute;
+        left: 0;
+        top: 23px;
+    }
+    #header_gnb,
+    #header_lnb {
+        display: block;
+    }
+    #header_gnb {
+        position: absolute;
+        right: 0;
+        top: 25px;
+        color: #666;
+    }
+    #header_gnb ul {
+        display: flex;
+        font-size: 14px;
+    }
+    #header_gnb ul li:not(:last-child)::after {
+        content: "|";
+        margin: 0 8px 0;
+        color: #c5c5c5;
+    }
+    #header_lnb {
+        position: absolute;
+        right: 0;
+        top: 68px;
+        color: #000;
+        font-weight: 400;
+    }
+    #header_lnb ul {
+        display: flex;
+    }
+    
+    #header_lnb ul li:not(:last-child) {
+        margin-right: 42px;
+    }
+    #header_lnb ul li a:hover {
+        color: #572a31;
+        transition: .5s;
+    }
+    .lnb_wrap {
+        position: absolute;
+        opacity: 0;
+        transition: .5s;
+        margin-top: 30px; 
+    }
+    .lnb_btn {
+        position: relative;
+    }
+    .lnb_btn ul {
+        background-color: #fff;
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        padding: 60px 15px 60px 40px;
+        box-shadow: 0 -1px 10px #c5c5c5;
+        transform: translate(-35%);
+        font-size: 17px;
+        line-height: 2.5;
+        color: black;
+    }
+    .lnb_btn ul p {
+        font-weight: 100;
+        font-size: 14px;
+    }
+    #header_lnb>ul>li:last-of-type ul,
+    #header_lnb>ul>li:nth-last-child(2) ul {
+        flex-direction: row;
+    } 
+
+    .lnb_btn:hover .lnb_wrap{
+        opacity: 1;
+    }
+    #margin_50 {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    
+
+    #main_visual {
+        height: 42vw;
+        background-size: 100%;
+    }
+    #main_visual .center_wrap {
+        width: 1400px;
+        margin: auto;
+    }
+
+    #notice {
+        height: 70px;
+    }
+    #notice .center_wrap {
+        width: 1400px;
+        margin: auto;
+    }
+    .notice_recent:last-of-type {
+        display: block;
+    }
+    #notice_box a:last-of-type {
+        right: 80px;
+        display: flex;
+    }
+    #notice_box a:first-of-type {
+        position: absolute;
+        left: 77px;
+    }
+    .notice_recent {
+        width: 553px;
+        height: 100%;
+    }
+
+    #toms_menu .center_wrap,
+    #toms_md .center_wrap {
+        width: 1400px;
+        margin: auto;
+        padding: 80px 0 0 0;
+        position: relative;
+    }
+    #toms_menu_slide,
+    #mdpick {
+        height: 585px;
+    }
+    #toms_menu,
+    #toms_md {
+        height: 855px;
+    }
+    .slide_play_btn {
+        width: 255px;
+        height: 19px;
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        top: 104px;
+        right: 0;
+        font-size: 20px;
+        line-height: 19px;
+    }
+    .slide_play_btn ul {
+        display: flex;
+        align-items: center;
+    }
+    .slide_play_btn li {
+        width: 15px;
+        height: 15px;
+        background-color: #c5c5c5;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+    .slide_play_btn ul li:first-child {
+        background-color: #572a31;
+    }
+    .slide_play_btn li:last-child {
+        margin-right: 0;
+    }
+    figure ul li img {
+        width: 100%;
+        height: 518px;
+    }
+
+    #toms_about {
+        height: 600px;
+        background-size: cover;
+    }
+    #toms_about .center_wrap {
+        width: 1400px;
+        margin: auto;
+        position: relative;
+    }
+    .toms_about_title {
+        width: 666px;
+        height: 135px;
+        top: 111px;
+        right: 0;
+    }
+    .toms_about_title {
+        font-size: 58px;
+    }
+    .toms_about_title span {
+        font-size: 47px;
+    }
+    .toms_about_cont {
+        width: 666px;
+        height: 113px;
+        right: 0px;
+        top: 279px;
+        font-size: 23.5px;
+        line-height: 1.5;
+        margin-bottom: 55px;
+    }
+    .only_desctop {
+        display: block;
+    }
+    #btn_wrap {
+        width: 665px;
+        height: 60px;
+        right: 0px;
+        bottom: 93px;
+    }
+    #branch_btn {
+        width: 215px;
+        height: 62px;
+        padding-top: 8px;
+        font-size: 25px;
+    }
+    #brand_btn {
+        width: 215px;
+        height: 62px;
+        padding-top: 8px;
+        font-size: 25px;
+    }
+    #new_branch_btn {
+        width: 215px;
+        height: 60px;
+        padding-top: 8px;
+        font-size: 25px;
+    }
+    
+    #toms_sns {
+        height: 771px;
+    }
+    #toms_sns .center_wrap {
+        width: 1400px;
+        margin: auto;
+    }
+    #toms_sns_box {
+        height: 515px;
+    }
+    #toms_sns_box ul li {
+        width: 20%;
+        height: 256px;
+    }
+
+    /* 푸터 */
+    #footer {
+        height: 376px;
+        padding: 0;
+    }
+    #footer .center_wrap {
+        width: 1400px;
+        margin: auto;
+    }
+    #footer h3 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    #footer .center_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: center;
+        position: relative;
+    }
+
+    #customer {
+        width: 400px;
+        height: 93px;
+        position: absolute;
+        left: 0;
+        top: 85px;
+        line-height: 1.8;
+    }
+    #customer a {
+        font-size: 40px;
+    }
+
+    #follow {
+        width: 251px;
+        height: 36px;
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 90px;
+    }
+
+    #language {
+        display: none;
+    }
+
+    #fnb {
+        width: 700px;
+        height: 60px;
+        position: absolute;
+        top: 85px;
+        left: 400px;
+        font-size: 18px;
+    }
+
+    #company {
+        width: 700px;
+        height: 47px;
+        line-height: 1.2;
+        position: absolute;
+        top: 186px;
+        left: 400px;
+    }
+
+    #copyright {
+        width: 700px;
+        height: 19px;
+        position: absolute;
+        bottom: 103px;
+        left: 400px;
+    }
+
+    #chatbot img {
+        width: 90px;
+        height: 90px;
+        bottom: 110px;
+    }
+}
